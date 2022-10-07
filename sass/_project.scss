@@ -1,0 +1,649 @@
+section.project {
+    @include centerColumn;
+    width: 100%;
+    height: 120vh;
+    div.container {
+        width: 80%;
+        height: 80%;
+        @include spaceBetweenColumn;
+        div.top {
+            // background-color: red;
+            width: 100%;
+            height: 50%;
+            @include spaceBetweenRow;
+            h2 {
+                font-size: 1.5em;
+                font-weight: 600;
+                }
+                button {
+                background-color: white;
+                width: 6em;
+            }
+        }
+        div.middle {
+            border: 1px solid rgba(0, 0, 0, 0.115);
+            height: 70%;
+            width: 100%;
+            @include spaceBetweenRow;
+            align-items: start;
+            div.left {
+                @include centerColumn;
+                height: 100%;
+                div.frame {
+                    @include spaceAroundColumn;
+                    width: 90%;
+                    height: 90%;
+                    div.text {
+                        height: 50%;
+                        @include spaceAroundColumn;
+                        align-items: start;
+                        h2 {
+                            font-size: 1.7em;
+                            font-weight: 700;
+                            color: black;
+                        }
+                        p {
+                            font-size: 1em;
+                            color: grey;
+                        }
+                    }
+                }
+                div.button {
+                    width: 100%;
+                    height: 30%;
+                    @include centerColumn;
+                    align-items: start;
+                    justify-content: left;
+                    button {
+                        background-color: red;
+                        width: 130px;
+                        border: none;
+                        color: white;
+                        border-radius: 5px;
+                        line-height: 2em;
+                        
+                    }
+                }
+            }
+            div.right {
+                // background-color: red;
+                height: 100%;
+                width: 50%;
+                @include centerColumn;
+                justify-content: start;
+    
+                img {
+                    // height: 100%;
+                    width: 100%;
+
+                }
+            }
+        }
+        div.bottom {
+            height: 70%;
+            width: 100%;
+            @include spaceBetweenRow;
+            div.leftContainer {
+                border: 1px solid rgba(0, 0, 0, 0.115);
+                height: 90%;
+                width: 80%;
+                @include spaceBetweenRow;
+                align-items: start;
+                div.left {
+                    @include centerColumn;
+                    height: 100%;
+                    div.frame {
+                        @include spaceAroundColumn;
+                        width: 90%;
+                        height: 90%;
+                        div.text {
+                            height: 50%;
+                            @include spaceAroundColumn;
+                            align-items: start;
+                            h2 {
+                                font-size: 1.7em;
+                                font-weight: 700;
+                                color: black;
+                            }
+                            p {
+                                font-size: 1em;
+                                color: grey;
+                            }
+                        }
+                    }
+                    div.button {
+                        width: 100%;
+                        height: 30%;
+                        @include centerColumn;
+                        align-items: start;
+                        justify-content: left;
+                        button {
+                            background-color: red;
+                            width: 130px;
+                            border: none;
+                            color: white;
+                            border-radius: 5px;
+                            line-height: 2em;
+                            
+                        }
+                    }
+                }
+                div.right {
+                    // background-color: red;
+                    height: 100%;
+                    // width: 65%;
+                    @include centerColumn;
+                    justify-content: start;
+                    
+        
+                    img {
+                        // width: 100%;
+                        height: 100%;
+                    }
+                }
+
+            }
+            div.rightContainer {
+                border: 1px solid rgba(0, 0, 0, 0.115);
+                height: 90%;
+                width: 80%;
+                @include spaceBetweenRow;
+                align-items: start;
+                div.left {
+                    @include centerColumn;
+                    height: 100%;
+                    div.frame {
+                        @include spaceAroundColumn;
+                        width: 90%;
+                        height: 90%;
+                        div.text {
+                            height: 50%;
+                            @include spaceAroundColumn;
+                            align-items: start;
+                            h2 {
+                                font-size: 1.7em;
+                                font-weight: 700;
+                                color: black;
+                            }
+                            p {
+                                font-size: 1em;
+                                color: grey;
+                            }
+                        }
+                    }
+                    div.button {
+                        width: 100%;
+                        height: 30%;
+                        @include centerColumn;
+                        align-items: start;
+                        justify-content: left;
+                        button {
+                            background-color: red;
+                            width: 130px;
+                            border: none;
+                            color: white;
+                            border-radius: 5px;
+                            line-height: 2em;
+                            
+                        }
+                    }
+                }
+                div.right {
+                    // background-color: red;
+                    height: 100%;
+                    @include centerColumn;
+                    justify-content: start;
+        
+                    img {
+                        height: 100%;
+                        // width: 100%;
+                    }
+                }
+
+            }
+        }
+
+        
+    }
+}
+
+
+@media (max-width: 960px) {
+    section.project {
+        @include centerColumn;
+        justify-content: start;
+        width: 100%;
+        height: 150vh;
+        div.container {
+            // background-color: red;
+            width: 90%;
+            height: 100%;
+            @include spaceBetweenColumn;
+            justify-content: start;
+            div.top {
+                // background-color: red;
+                width: 100%;
+                height: 10%;
+                @include spaceBetweenRow;
+                h2 {
+                    font-size: 1.5em;
+                    font-weight: 600;
+                    }
+                    button {
+                    background-color: white;
+                    width: 6em;
+                }
+            }
+            div.middle {
+                border: 1px solid rgba(0, 0, 0, 0.115);
+                height: 30%;
+                width: 100%;
+                @include spaceBetweenRow;
+                align-items: start;
+                div.left {
+                    @include centerColumn;
+                    height: 100%;
+                    div.frame {
+                        @include spaceAroundColumn;
+                        width: 90%;
+                        height: 90%;
+                        div.text {
+                            height: 50%;
+                            @include spaceAroundColumn;
+                            align-items: start;
+                            h2 {
+                                font-size: 1.7em;
+                                font-weight: 700;
+                                color: black;
+                            }
+                            p {
+                                font-size: 1em;
+                                color: grey;
+                            }
+                        }
+                    }
+                    div.button {
+                        width: 100%;
+                        height: 30%;
+                        @include centerColumn;
+                        align-items: start;
+                        justify-content: left;
+                        button {
+                            background-color: red;
+                            width: 130px;
+                            border: none;
+                            color: white;
+                            border-radius: 5px;
+                            line-height: 2em;
+                            
+                        }
+                    }
+                }
+                div.right {
+                    // background-color: red;
+                    height: 100%;
+                    width: 50%;
+                    @include centerColumn;
+                    justify-content: start;
+        
+                    img {
+                        // height: 100%;
+                        width: 100%;
+    
+                    }
+                }
+            }
+            div.bottom {
+                height: 60%;
+                width: 100%;
+                @include spaceAroundRow;
+                flex-wrap: wrap;
+                div.leftContainer {
+                    border: 1px solid rgba(0, 0, 0, 0.115);
+                    height: 50%;
+                    width: 100%;
+                    @include spaceBetweenRow;
+                    align-items: start;
+                    div.left {
+                        @include centerColumn;
+                        height: 100%;
+                        div.frame {
+                            @include spaceAroundColumn;
+                            width: 90%;
+                            height: 90%;
+                            div.text {
+                                height: 50%;
+                                @include spaceAroundColumn;
+                                align-items: start;
+                                h2 {
+                                    font-size: 1.7em;
+                                    font-weight: 700;
+                                    color: black;
+                                }
+                                p {
+                                    font-size: 1em;
+                                    color: grey;
+                                }
+                            }
+                        }
+                        div.button {
+                            width: 100%;
+                            height: 30%;
+                            @include centerColumn;
+                            align-items: start;
+                            justify-content: left;
+                            button {
+                                background-color: red;
+                                width: 130px;
+                                border: none;
+                                color: white;
+                                border-radius: 5px;
+                                line-height: 2em;
+                                
+                            }
+                        }
+                    }
+                    div.right {
+                        // background-color: red;
+                        height: 100%;
+                        // width: 65%;
+                        @include centerColumn;
+                        justify-content: start;
+                        
+            
+                        img {
+                            width: 100%;
+                            // height: 100%;
+                        }
+                    }
+    
+                }
+                div.rightContainer {
+                    border: 1px solid rgba(0, 0, 0, 0.115);
+                    height: 50%;
+                    width: 100%;
+                    @include spaceBetweenRow;
+                    align-items: start;
+                    div.left {
+                        @include centerColumn;
+                        height: 100%;
+                        div.frame {
+                            @include spaceAroundColumn;
+                            width: 90%;
+                            height: 90%;
+                            div.text {
+                                height: 50%;
+                                @include spaceAroundColumn;
+                                align-items: start;
+                                h2 {
+                                    font-size: 1.7em;
+                                    font-weight: 700;
+                                    color: black;
+                                }
+                                p {
+                                    font-size: 1em;
+                                    color: grey;
+                                }
+                            }
+                        }
+                        div.button {
+                            width: 100%;
+                            height: 30%;
+                            @include centerColumn;
+                            align-items: start;
+                            justify-content: left;
+                            button {
+                                background-color: red;
+                                width: 130px;
+                                border: none;
+                                color: white;
+                                border-radius: 5px;
+                                line-height: 2em;
+                                
+                            }
+                        }
+                    }
+                    div.right {
+                        // background-color: red;
+                        height: 100%;
+                        @include centerColumn;
+                        justify-content: start;
+            
+                        img {
+                            // height: 100%;
+                            width: 100%;
+                        }
+                    }
+    
+                }
+            }
+    
+            
+        }
+    }
+}
+
+
+@media (max-width: 420px) {
+    section.project {
+        @include centerColumn;
+        justify-content: start;
+        width: 100%;
+        height: 300vh;
+        div.container {
+            // background-color: red;
+            width: 90%;
+            height: 100%;
+            @include spaceBetweenColumn;
+            justify-content: start;
+            div.top {
+                // background-color: red;
+                width: 100%;
+                height: 5%;
+                @include spaceBetweenRow;
+                h2 {
+                    font-size: 1.5em;
+                    font-weight: 600;
+                    }
+                    button {
+                    background-color: white;
+                    width: 6em;
+                }
+            }
+            div.middle {
+                // background-color: green;
+                border: 1px solid rgba(0, 0, 0, 0.115);
+                height: 30%;
+                width: 100%;
+                @include spaceBetweenRow;
+                flex-wrap: wrap;
+                align-items: start;
+                div.left {
+                    @include centerColumn;
+                    height: 50%;
+                    width: 100%;
+                    div.frame {
+                        @include spaceAroundColumn;
+                        width: 90%;
+                        height: 90%;
+                        div.text {
+                            height: 50%;
+                            @include spaceAroundColumn;
+                            align-items: start;
+                            h2 {
+                                font-size: 1.7em;
+                                font-weight: 700;
+                                color: black;
+                            }
+                            p {
+                                font-size: 1em;
+                                color: grey;
+                            }
+                        }
+                    }
+                    div.button {
+                        width: 100%;
+                        height: 30%;
+                        @include centerColumn;
+                        align-items: start;
+                        justify-content: left;
+                        button {
+                            background-color: red;
+                            width: 130px;
+                            border: none;
+                            color: white;
+                            border-radius: 5px;
+                            line-height: 2em;
+                            
+                        }
+                    }
+                }
+                div.right {
+                    // background-color: red;
+                    height: 50%;
+                    width: 100%;
+                    @include centerColumn;
+                    justify-content: start;
+        
+                    img {
+                        // height: 100%;
+                        width: 100%;
+    
+                    }
+                }
+            }
+            div.bottom {
+                height: 60%;
+                width: 100%;
+                @include spaceAroundColumn;
+                // background-color: red;
+                // flex-wrap: wrap;
+                div.leftContainer {
+                    border: 1px solid rgba(0, 0, 0, 0.115);
+                    height: 50%;
+                    width: 100%;
+                    @include spaceBetweenRow;
+                    flex-wrap: wrap;
+                    align-items: start;
+                    div.left {
+                        @include centerColumn;
+                        height: 50%;
+                        width: 100%;
+                        div.frame {
+                            @include spaceAroundColumn;
+                            width: 90%;
+                            height: 90%;
+                            div.text {
+                                height: 50%;
+                                @include spaceAroundColumn;
+                                align-items: start;
+                                h2 {
+                                    font-size: 1.7em;
+                                    font-weight: 700;
+                                    color: black;
+                                }
+                                p {
+                                    font-size: 1em;
+                                    color: grey;
+                                }
+                            }
+                        }
+                        div.button {
+                            width: 100%;
+                            height: 30%;
+                            @include centerColumn;
+                            align-items: start;
+                            justify-content: left;
+                            button {
+                                background-color: red;
+                                width: 130px;
+                                border: none;
+                                color: white;
+                                border-radius: 5px;
+                                line-height: 2em;
+                                
+                            }
+                        }
+                    }
+                    div.right {
+                        // background-color: red;
+                        height: 50%;
+                        width: 100%;
+                        @include centerColumn;
+                        justify-content: center;
+                        
+            
+                        img {
+                            // width: 80%;
+                            height: 100%;
+                        }
+                    }
+    
+                }
+                div.rightContainer {
+                    border: 1px solid rgba(0, 0, 0, 0.115);
+                    height: 50%;
+                    width: 100%;
+                    @include spaceBetweenRow;
+                    align-items: start;
+                    flex-wrap: wrap;
+                    div.left {
+                        @include centerColumn;
+                        height: 50%;
+                        width: 100%;
+                        div.frame {
+                            @include spaceAroundColumn;
+                            width: 90%;
+                            height: 90%;
+                            div.text {
+                                height: 50%;
+                                @include spaceAroundColumn;
+                                align-items: start;
+                                h2 {
+                                    font-size: 1.7em;
+                                    font-weight: 700;
+                                    color: black;
+                                }
+                                p {
+                                    font-size: 1em;
+                                    color: grey;
+                                }
+                            }
+                        }
+                        div.button {
+                            width: 100%;
+                            height: 30%;
+                            @include centerColumn;
+                            align-items: start;
+                            justify-content: left;
+                            button {
+                                background-color: red;
+                                width: 130px;
+                                border: none;
+                                color: white;
+                                border-radius: 5px;
+                                line-height: 2em;
+                                
+                            }
+                        }
+                    }
+                    div.right {
+                        // background-color: red;
+                        height: 50%;
+                        width: 100%;
+                        @include centerColumn;
+                        justify-content: start;
+            
+                        img {
+                            height: 100%;
+                            // width: 80%;
+                        }
+                    }
+    
+                }
+            }
+    
+            
+        }
+    }
+}

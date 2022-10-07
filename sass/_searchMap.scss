@@ -1,0 +1,212 @@
+section.searchMap {
+    // background-color: green;
+    width: 100%;
+    height: 65vh;
+    @include centerColumn;
+    div.container {
+        border: 1px solid rgba(0, 0, 0, 0.115);
+        height: 70%;
+        width: 80%;
+        @include spaceBetweenRow;
+        align-items: start;
+        div.left {
+            @include centerColumn;
+            height: 100%;
+            // width: 50%;
+            div.frame {
+                @include spaceAroundColumn;
+                width: 90%;
+                height: 90%;
+            div.text {
+                height: 50%;
+                @include spaceAroundColumn;
+                align-items: start;
+                h2 {
+                    font-size: 1.7em;
+                    font-weight: 700;
+                    color: black;
+                }
+                p {
+                    font-size: 1em;
+                    color: grey;
+                }
+            }
+            div.button {
+                width: 100%;
+                height: 30%;
+                @include centerColumn;
+                align-items: start;
+                justify-content: left;
+                button {
+                    background-color: red;
+                    width: 130px;
+                    border: none;
+                    color: white;
+                    border-radius: 5px;
+                    line-height: 2em;
+                    
+                }
+            }
+            }
+        }
+        div.right {
+            height: 100%;
+            // background-color: red;
+            width: 45%;
+            @include centerColumn;
+            // overflow: none;
+            justify-content: start;
+            img {
+                // height: 100%;
+                width: 100%;
+                overflow: hidden;
+
+            }
+        }
+    }
+}
+
+@media (max-width: 680px) {
+    section.searchMap {
+        // background-color: green;
+        width: 100%;
+        height: 65vh;
+        @include centerColumn;
+        div.container {
+            border: 1px solid rgba(0, 0, 0, 0.115);
+            height: 70%;
+            width: 90%;
+            @include spaceBetweenRow;
+            align-items: start;
+            div.left {
+                @include centerColumn;
+                height: 100%;
+                // width: 50%;
+                div.frame {
+                    @include spaceAroundColumn;
+                    width: 90%;
+                    height: 90%;
+                div.text {
+                    height: 50%;
+                    @include spaceAroundColumn;
+                    align-items: start;
+                    h2 {
+                        font-size: 1.7em;
+                        font-weight: 700;
+                        color: black;
+                    }
+                    p {
+                        font-size: 1em;
+                        color: grey;
+                    }
+                }
+                div.button {
+                    width: 100%;
+                    height: 30%;
+                    @include centerColumn;
+                    align-items: start;
+                    justify-content: left;
+                    button {
+                        background-color: red;
+                        width: 130px;
+                        border: none;
+                        color: white;
+                        border-radius: 5px;
+                        line-height: 2em;
+                        
+                    }
+                }
+                }
+            }
+            div.right {
+                height: 100%;
+                // background-color: red;
+                width: 50%;
+                @include centerColumn;
+                // overflow: none;
+                justify-content: center;
+                img {
+                    // height: 100%;
+                    width: 100%;
+                    overflow: hidden;
+    
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 420px) {
+    section.searchMap {
+        // background-color: green;
+        width: 100%;
+        height: 60vh;
+        // background-color: red;
+        @include spaceBetweenColumn;
+        justify-content: start;
+        div.container {
+            border: 1px solid rgba(0, 0, 0, 0.115);
+            height: 100%;
+            width: 90%;
+            @include spaceBetweenRow;
+            align-items: start;
+            flex-wrap: wrap;
+            div.left {
+                // background-color: red;
+                @include centerColumn;
+                height: 50%;
+                width: 100%;
+                div.frame {
+                    @include spaceAroundColumn;
+                    width: 90%;
+                    height: 90%;
+                div.text {
+                    height: 50%;
+                    @include spaceAroundColumn;
+                    align-items: start;
+                    h2 {
+                        font-size: 1.7em;
+                        font-weight: 700;
+                        color: black;
+                    }
+                    p {
+                        font-size: 1em;
+                        color: grey;
+                    }
+                }
+                div.button {
+                    width: 100%;
+                    height: 30%;
+                    @include centerColumn;
+                    align-items: start;
+                    justify-content: left;
+                    button {
+                        background-color: red;
+                        width: 130px;
+                        border: none;
+                        color: white;
+                        border-radius: 5px;
+                        line-height: 2em;
+                        
+                    }
+                }
+                }
+            }
+            div.right {
+                height: 50%;
+                // background-color: red;
+                width: 100%;
+                @include centerColumn;
+                // overflow: none;
+                justify-content: center;
+                img {
+                    // height: 100%;
+                    // width: 100%;
+                    overflow: hidden;
+    
+                }
+            }
+        }
+    }
+}

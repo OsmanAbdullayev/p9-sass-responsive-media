@@ -1,0 +1,258 @@
+section.rental {
+    width: 100%;
+    height: 80vh;
+    @include centerRow;
+    div.container {
+        width: 80%;
+        height: 80%;
+        @include spaceBetweenColumn;
+        div.top {
+            width: 100%;
+            height: 20%;
+            @include spaceBetweenRow;
+            h2 {
+                font-size: 1.5em;
+                font-weight: 600;
+            }
+            button {
+                background-color: white;
+                width: 6em;
+            }
+        }
+        div.bottom {
+            width: 100%;
+            height: 80%;
+            @include spaceBetweenRow;
+            article {
+                @include centerColumn;
+                justify-content: center;
+                width: 23%;
+                height: 90%;
+                border: 1px solid rgba(128, 128, 128, 0.271);
+                div.frame {
+                    // width: 285px;
+                    // height: 284px;
+                    width: 95%;
+                    height: 95%;
+                    @include centerColumn;
+                    justify-content: start;
+                    img {
+                        width: 100%;
+                    }
+                div.info {
+                    height: 50%;
+                    width: 95%;
+                    @include spaceAroundColumn;
+                    align-items: start;
+                    p.price {
+                        font-size: 1.5em;
+                        font-weight: 600;
+                    }
+                    p.sale {
+                        font-size: 1em;
+                    }
+                    p.placeDate {
+                        font-size: 0.7em;
+                        color: grey;
+                    }
+                }
+                div.icons {
+                    width: 95%;
+                    height: 3em;
+                    @include centerRow;
+                    justify-content: start;
+                    ul {
+                       @include spaceBetweenRow;
+                        width: 55%;
+                       li {
+                        // width: 30%;
+                        i {
+                            // width: 100%;
+                            font-size: 0.8em;
+                            font-weight: 600;
+                        }
+                       }
+                    }
+                }
+            }
+            }
+            
+        }
+    }   
+}
+
+@media (max-width: 680px) {
+    section.rental {
+        width: 100%;
+        height: 100vh;
+        @include centerRow;
+        align-items: start;
+        div.container {
+            width: 90%;
+            // height: 80%;
+            @include centerColumn;
+            justify-content: start;
+            div.top {
+                width: 100%;
+                height: 20%;
+                @include spaceBetweenRow;
+                h2 {
+                    font-size: 1.5em;
+                    font-weight: 600;
+                }
+                button {
+                    background-color: white;
+                    width: 6em;
+                }
+            }
+            div.bottom {
+                width: 100%;
+                height: 300px;
+                @include spaceBetweenRow;
+                flex-wrap: wrap;
+                article {
+                    @include spaceAroundRow;
+                    width: 49%;
+                    height: 90%;
+                    border: 1px solid rgba(128, 128, 128, 0.271);
+                    div.frame {
+                        // width: 285px;
+                        // height: 284px;
+                        width: 95%;
+                        height: 95%;
+                        @include centerColumn;
+                        justify-content: start;
+                        img {
+                            width: 100%;
+                        }
+                    div.info {
+                        height: 50%;
+                        width: 95%;
+                        @include spaceAroundColumn;
+                        align-items: start;
+                        p.price {
+                            font-size: 1.5em;
+                            font-weight: 600;
+                        }
+                        p.sale {
+                            font-size: 1em;
+                        }
+                        p.placeDate {
+                            font-size: 0.7em;
+                            color: grey;
+                        }
+                    }
+                    div.icons {
+                        width: 95%;
+                        height: 3em;
+                        @include centerRow;
+                        justify-content: start;
+                        ul {
+                           @include spaceBetweenRow;
+                            width: 55%;
+                           li {
+                            // width: 30%;
+                            i {
+                                // width: 100%;
+                                font-size: 0.8em;
+                                font-weight: 600;
+                            }
+                           }
+                        }
+                    }
+                }
+                }
+                
+            }
+        }   
+    }
+}
+
+
+@media (max-width: 420px) {
+    section.rental {
+        width: 100%;
+        height: 250vh;
+        @include centerRow;
+        align-items: start;
+        div.container {
+            width: 90%;
+            // height: 80%;
+            @include spaceBetweenColumn;
+            justify-content: start;
+            div.top {
+                width: 100%;
+                height: 5%;
+                @include spaceBetweenRow;
+                h2 {
+                    font-size: 1.5em;
+                    font-weight: 600;
+                }
+                button {
+                    background-color: white;
+                    width: 6em;
+                }
+            }
+            div.bottom {
+                width: 100%;
+                height: 400px;
+                @include spaceBetweenRow;
+                flex-wrap: wrap;
+                article {
+                    @include centerColumn;
+                    justify-content: center;
+                    width: 100%;
+                    height: 90%;
+                    border: 1px solid rgba(128, 128, 128, 0.271);
+                    div.frame {
+                        // width: 285px;
+                        // height: 284px;
+                        width: 100%;
+                        height: 95%;
+                        @include centerColumn;
+                        justify-content: start;
+                        img {
+                            width: 100%;
+                        }
+                    div.info {
+                        height: 50%;
+                        width: 95%;
+                        @include spaceAroundColumn;
+                        align-items: start;
+                        p.price {
+                            font-size: 1.5em;
+                            font-weight: 600;
+                        }
+                        p.sale {
+                            font-size: 1em;
+                        }
+                        p.placeDate {
+                            font-size: 0.7em;
+                            color: grey;
+                        }
+                    }
+                    div.icons {
+                        width: 95%;
+                        height: 3em;
+                        @include centerRow;
+                        justify-content: start;
+                        ul {
+                           @include spaceBetweenRow;
+                            width: 55%;
+                           li {
+                            // width: 30%;
+                            i {
+                                // width: 100%;
+                                font-size: 0.8em;
+                                font-weight: 600;
+                            }
+                           }
+                        }
+                    }
+                }
+                }
+                
+            }
+        }   
+    }
+}

@@ -1,0 +1,2258 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  font-family: Montserrat, sans-serif;
+  vertical-align: baseline;
+  text-decoration: none;
+  color: black;
+  box-sizing: border-box;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+  box-sizing: border-box;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  height: 10vh;
+  box-shadow: 0 0 10px 4px rgba(31, 66, 135, 0.526);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+header div.navItems {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  height: 100%;
+}
+header div.navItems div.leftNav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+}
+header div.navItems div.leftNav div.logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+header div.navItems div.leftNav nav.navItems {
+  width: 60%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  justify-content: end;
+  width: 70%;
+}
+header div.navItems div.leftNav nav.navItems ul {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+header div.navItems div.rightNav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 15%;
+}
+header div.navItems div.rightNav button.advertise {
+  border: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: red;
+  width: 8em;
+  border-radius: 5px;
+  line-height: 2em;
+}
+header div.navItems div.rightNav button.advertise a {
+  color: white;
+}
+header div.navItems div.rightNav div.profileButton button {
+  background-color: black;
+  width: 2em;
+  height: 2em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: none;
+}
+header div.navItems div.rightNav div.profileButton button i {
+  font-size: 1.5em;
+  color: white;
+}
+
+@media (max-width: 1200px) {
+  header {
+    width: 100%;
+    height: 10vh;
+    box-shadow: 0 0 10px 4px rgba(31, 66, 135, 0.526);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  header div.navItems {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 90%;
+    height: 100%;
+  }
+  header div.navItems div.leftNav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+  }
+  header div.navItems div.leftNav div.logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  header div.navItems div.leftNav nav.navItems {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+  }
+  header div.navItems div.leftNav nav.navItems ul {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+  header div.navItems div.leftNav nav.navItems ul a {
+    font-size: 0.8em;
+  }
+  header div.navItems div.rightNav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 25%;
+  }
+  header div.navItems div.rightNav button.advertise {
+    border: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: red;
+    width: 6em;
+    border-radius: 5px;
+    line-height: 2em;
+  }
+  header div.navItems div.rightNav button.advertise a {
+    color: white;
+  }
+  header div.navItems div.rightNav div.profileButton button {
+    background-color: black;
+    width: 2em;
+    height: 2em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: none;
+  }
+  header div.navItems div.rightNav div.profileButton button i {
+    font-size: 1.5em;
+    color: white;
+  }
+}
+@media (max-width: 553px) {
+  header {
+    width: 100%;
+    height: 10vh;
+    box-shadow: 0 0 10px 4px rgba(31, 66, 135, 0.526);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  header div.navItems {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 90%;
+    height: 100%;
+  }
+  header div.navItems div.leftNav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+  }
+  header div.navItems div.leftNav div.logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  header div.navItems div.leftNav nav.navItems {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  header div.navItems div.leftNav nav.navItems ul {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+  header div.navItems div.leftNav nav.navItems ul a {
+    font-size: 0em;
+  }
+  header div.navItems div.rightNav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 50%;
+  }
+  header div.navItems div.rightNav button.advertise {
+    border: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: red;
+    width: 6em;
+    border-radius: 5px;
+    line-height: 2em;
+  }
+  header div.navItems div.rightNav button.advertise a {
+    color: white;
+  }
+  header div.navItems div.rightNav div.profileButton button {
+    background-color: black;
+    width: 2em;
+    height: 2em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: none;
+  }
+  header div.navItems div.rightNav div.profileButton button i {
+    font-size: 1.5em;
+    color: white;
+  }
+}
+section.main {
+  width: 100%;
+  height: 70vh;
+  background-image: url(../img/Main.png);
+  background-size: cover;
+  background-position: center;
+}
+section.main div.container {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.09);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+section.main div.container article {
+  display: flex;
+  flex-direction: Column;
+  align-items: center;
+  justify-content: space-between;
+  height: 40%;
+  width: 40%;
+  text-align: center;
+}
+section.main div.container article h1 {
+  font-size: 3.5em;
+  width: 70%;
+  color: white;
+  font-weight: 300;
+}
+section.main div.container article div.searchbox {
+  width: 100%;
+  height: 2.5em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+section.main div.container article div.searchbox input {
+  height: 100%;
+  border: none;
+  width: 100%;
+}
+section.main div.container article div.searchbox button {
+  background-color: white;
+  height: 100%;
+  border-color: transparent;
+}
+section.main div.container article div.searchbox button i {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  font-size: 2em;
+}
+
+@media (max-width: 1200px) {
+  section.main {
+    width: 100%;
+    height: 70vh;
+    background-image: url(../img/Main.png);
+    background-size: cover;
+    background-position: center;
+  }
+  section.main div.container {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.09);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  section.main div.container article {
+    display: flex;
+    flex-direction: Column;
+    align-items: center;
+    justify-content: space-between;
+    height: 40%;
+    width: 70%;
+    text-align: center;
+  }
+  section.main div.container article h1 {
+    font-size: 2em;
+    width: 100%;
+    color: white;
+    font-weight: 300;
+  }
+  section.main div.container article div.searchbox {
+    width: 100%;
+    height: 2.5em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  section.main div.container article div.searchbox input {
+    height: 100%;
+    border: none;
+    width: 100%;
+  }
+  section.main div.container article div.searchbox button {
+    background-color: white;
+    height: 100%;
+    border-color: transparent;
+  }
+  section.main div.container article div.searchbox button i {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    font-size: 2em;
+  }
+}
+section.sale {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+section.sale div.container {
+  width: 80%;
+  height: 80%;
+  display: flex;
+  flex-direction: Column;
+  align-items: center;
+  justify-content: space-between;
+}
+section.sale div.container div.top {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+section.sale div.container div.top h2 {
+  font-size: 1.5em;
+  font-weight: 600;
+}
+section.sale div.container div.top button {
+  background-color: white;
+  width: 6em;
+}
+section.sale div.container div.bottom {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+section.sale div.container div.bottom article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  justify-content: center;
+  width: 23%;
+  height: 90%;
+  border: 1px solid rgba(128, 128, 128, 0.249);
+}
+section.sale div.container div.bottom article div.frame {
+  width: 95%;
+  height: 95%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  justify-content: start;
+}
+section.sale div.container div.bottom article div.frame img {
+  width: 100%;
+}
+section.sale div.container div.bottom article div.frame div.info {
+  height: 50%;
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  align-items: start;
+}
+section.sale div.container div.bottom article div.frame div.info p.price {
+  font-size: 1.5em;
+  font-weight: 600;
+}
+section.sale div.container div.bottom article div.frame div.info p.sale {
+  font-size: 1em;
+}
+section.sale div.container div.bottom article div.frame div.info p.placeDate {
+  font-size: 0.7em;
+  color: grey;
+}
+section.sale div.container div.bottom article div.frame div.icons {
+  width: 95%;
+  height: 3em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  justify-content: start;
+}
+section.sale div.container div.bottom article div.frame div.icons ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 55%;
+}
+section.sale div.container div.bottom article div.frame div.icons ul li i {
+  font-size: 0.8em;
+  font-weight: 600;
+}
+
+@media (max-width: 680px) {
+  section.sale {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    align-items: start;
+  }
+  section.sale div.container {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-content: start;
+  }
+  section.sale div.container div.top {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  section.sale div.container div.top h2 {
+    font-size: 1.5em;
+    font-weight: 600;
+  }
+  section.sale div.container div.top button {
+    background-color: white;
+    width: 6em;
+  }
+  section.sale div.container div.bottom {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  section.sale div.container div.bottom article {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 49%;
+    height: 90%;
+    border: 1px solid rgba(128, 128, 128, 0.249);
+  }
+  section.sale div.container div.bottom article div.frame {
+    width: 95%;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-content: start;
+  }
+  section.sale div.container div.bottom article div.frame img {
+    width: 100%;
+  }
+  section.sale div.container div.bottom article div.frame div.info {
+    height: 50%;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    align-items: start;
+  }
+  section.sale div.container div.bottom article div.frame div.info p.price {
+    font-size: 1.5em;
+    font-weight: 600;
+  }
+  section.sale div.container div.bottom article div.frame div.info p.sale {
+    font-size: 1em;
+  }
+  section.sale div.container div.bottom article div.frame div.info p.placeDate {
+    font-size: 0.7em;
+    color: grey;
+  }
+  section.sale div.container div.bottom article div.frame div.icons {
+    width: 95%;
+    height: 3em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    justify-content: start;
+  }
+  section.sale div.container div.bottom article div.frame div.icons ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 55%;
+  }
+  section.sale div.container div.bottom article div.frame div.icons ul li i {
+    font-size: 0.8em;
+    font-weight: 600;
+  }
+}
+@media (max-width: 420px) {
+  section.sale {
+    width: 100%;
+    height: 250vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    align-items: start;
+  }
+  section.sale div.container {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-content: start;
+  }
+  section.sale div.container div.top {
+    width: 100%;
+    height: 5%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  section.sale div.container div.top h2 {
+    font-size: 1.5em;
+    font-weight: 600;
+  }
+  section.sale div.container div.top button {
+    background-color: white;
+    width: 6em;
+  }
+  section.sale div.container div.bottom {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  section.sale div.container div.bottom article {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 90%;
+    border: 1px solid rgba(128, 128, 128, 0.249);
+  }
+  section.sale div.container div.bottom article div.frame {
+    width: 95%;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-content: start;
+  }
+  section.sale div.container div.bottom article div.frame img {
+    width: 100%;
+  }
+  section.sale div.container div.bottom article div.frame div.info {
+    height: 50%;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    align-items: start;
+  }
+  section.sale div.container div.bottom article div.frame div.info p.price {
+    font-size: 1.5em;
+    font-weight: 600;
+  }
+  section.sale div.container div.bottom article div.frame div.info p.sale {
+    font-size: 1em;
+  }
+  section.sale div.container div.bottom article div.frame div.info p.placeDate {
+    font-size: 0.7em;
+    color: grey;
+  }
+  section.sale div.container div.bottom article div.frame div.icons {
+    width: 95%;
+    height: 3em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    justify-content: start;
+  }
+  section.sale div.container div.bottom article div.frame div.icons ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 55%;
+  }
+  section.sale div.container div.bottom article div.frame div.icons ul li i {
+    font-size: 0.8em;
+    font-weight: 600;
+  }
+}
+section.rental {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+section.rental div.container {
+  width: 80%;
+  height: 80%;
+  display: flex;
+  flex-direction: Column;
+  align-items: center;
+  justify-content: space-between;
+}
+section.rental div.container div.top {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+section.rental div.container div.top h2 {
+  font-size: 1.5em;
+  font-weight: 600;
+}
+section.rental div.container div.top button {
+  background-color: white;
+  width: 6em;
+}
+section.rental div.container div.bottom {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+section.rental div.container div.bottom article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  justify-content: center;
+  width: 23%;
+  height: 90%;
+  border: 1px solid rgba(128, 128, 128, 0.271);
+}
+section.rental div.container div.bottom article div.frame {
+  width: 95%;
+  height: 95%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  justify-content: start;
+}
+section.rental div.container div.bottom article div.frame img {
+  width: 100%;
+}
+section.rental div.container div.bottom article div.frame div.info {
+  height: 50%;
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  align-items: start;
+}
+section.rental div.container div.bottom article div.frame div.info p.price {
+  font-size: 1.5em;
+  font-weight: 600;
+}
+section.rental div.container div.bottom article div.frame div.info p.sale {
+  font-size: 1em;
+}
+section.rental div.container div.bottom article div.frame div.info p.placeDate {
+  font-size: 0.7em;
+  color: grey;
+}
+section.rental div.container div.bottom article div.frame div.icons {
+  width: 95%;
+  height: 3em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  justify-content: start;
+}
+section.rental div.container div.bottom article div.frame div.icons ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 55%;
+}
+section.rental div.container div.bottom article div.frame div.icons ul li i {
+  font-size: 0.8em;
+  font-weight: 600;
+}
+
+@media (max-width: 680px) {
+  section.rental {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    align-items: start;
+  }
+  section.rental div.container {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-content: start;
+  }
+  section.rental div.container div.top {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  section.rental div.container div.top h2 {
+    font-size: 1.5em;
+    font-weight: 600;
+  }
+  section.rental div.container div.top button {
+    background-color: white;
+    width: 6em;
+  }
+  section.rental div.container div.bottom {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  section.rental div.container div.bottom article {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 49%;
+    height: 90%;
+    border: 1px solid rgba(128, 128, 128, 0.271);
+  }
+  section.rental div.container div.bottom article div.frame {
+    width: 95%;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-content: start;
+  }
+  section.rental div.container div.bottom article div.frame img {
+    width: 100%;
+  }
+  section.rental div.container div.bottom article div.frame div.info {
+    height: 50%;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    align-items: start;
+  }
+  section.rental div.container div.bottom article div.frame div.info p.price {
+    font-size: 1.5em;
+    font-weight: 600;
+  }
+  section.rental div.container div.bottom article div.frame div.info p.sale {
+    font-size: 1em;
+  }
+  section.rental div.container div.bottom article div.frame div.info p.placeDate {
+    font-size: 0.7em;
+    color: grey;
+  }
+  section.rental div.container div.bottom article div.frame div.icons {
+    width: 95%;
+    height: 3em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    justify-content: start;
+  }
+  section.rental div.container div.bottom article div.frame div.icons ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 55%;
+  }
+  section.rental div.container div.bottom article div.frame div.icons ul li i {
+    font-size: 0.8em;
+    font-weight: 600;
+  }
+}
+@media (max-width: 420px) {
+  section.rental {
+    width: 100%;
+    height: 250vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    align-items: start;
+  }
+  section.rental div.container {
+    width: 90%;
+    display: flex;
+    flex-direction: Column;
+    align-items: center;
+    justify-content: space-between;
+    justify-content: start;
+  }
+  section.rental div.container div.top {
+    width: 100%;
+    height: 5%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  section.rental div.container div.top h2 {
+    font-size: 1.5em;
+    font-weight: 600;
+  }
+  section.rental div.container div.top button {
+    background-color: white;
+    width: 6em;
+  }
+  section.rental div.container div.bottom {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  section.rental div.container div.bottom article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-content: center;
+    width: 100%;
+    height: 90%;
+    border: 1px solid rgba(128, 128, 128, 0.271);
+  }
+  section.rental div.container div.bottom article div.frame {
+    width: 100%;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-content: start;
+  }
+  section.rental div.container div.bottom article div.frame img {
+    width: 100%;
+  }
+  section.rental div.container div.bottom article div.frame div.info {
+    height: 50%;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    align-items: start;
+  }
+  section.rental div.container div.bottom article div.frame div.info p.price {
+    font-size: 1.5em;
+    font-weight: 600;
+  }
+  section.rental div.container div.bottom article div.frame div.info p.sale {
+    font-size: 1em;
+  }
+  section.rental div.container div.bottom article div.frame div.info p.placeDate {
+    font-size: 0.7em;
+    color: grey;
+  }
+  section.rental div.container div.bottom article div.frame div.icons {
+    width: 95%;
+    height: 3em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    justify-content: start;
+  }
+  section.rental div.container div.bottom article div.frame div.icons ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 55%;
+  }
+  section.rental div.container div.bottom article div.frame div.icons ul li i {
+    font-size: 0.8em;
+    font-weight: 600;
+  }
+}
+section.searchMap {
+  width: 100%;
+  height: 65vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+section.searchMap div.container {
+  border: 1px solid rgba(0, 0, 0, 0.115);
+  height: 70%;
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  align-items: start;
+}
+section.searchMap div.container div.left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+section.searchMap div.container div.left div.frame {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 90%;
+  height: 90%;
+}
+section.searchMap div.container div.left div.frame div.text {
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  align-items: start;
+}
+section.searchMap div.container div.left div.frame div.text h2 {
+  font-size: 1.7em;
+  font-weight: 700;
+  color: black;
+}
+section.searchMap div.container div.left div.frame div.text p {
+  font-size: 1em;
+  color: grey;
+}
+section.searchMap div.container div.left div.frame div.button {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-items: start;
+  justify-content: left;
+}
+section.searchMap div.container div.left div.frame div.button button {
+  background-color: red;
+  width: 130px;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  line-height: 2em;
+}
+section.searchMap div.container div.right {
+  height: 100%;
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  justify-content: start;
+}
+section.searchMap div.container div.right img {
+  width: 100%;
+  overflow: hidden;
+}
+
+@media (max-width: 680px) {
+  section.searchMap {
+    width: 100%;
+    height: 65vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  section.searchMap div.container {
+    border: 1px solid rgba(0, 0, 0, 0.115);
+    height: 70%;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    align-items: start;
+  }
+  section.searchMap div.container div.left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+  section.searchMap div.container div.left div.frame {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 90%;
+    height: 90%;
+  }
+  section.searchMap div.container div.left div.frame div.text {
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    align-items: start;
+  }
+  section.searchMap div.container div.left div.frame div.text h2 {
+    font-size: 1.7em;
+    font-weight: 700;
+    color: black;
+  }
+  section.searchMap div.container div.left div.frame div.text p {
+    font-size: 1em;
+    color: grey;
+  }
+  section.searchMap div.container div.left div.frame div.button {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-items: start;
+    justify-content: left;
+  }
+  section.searchMap div.container div.left div.frame div.button button {
+    background-color: red;
+    width: 130px;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    line-height: 2em;
+  }
+  section.searchMap div.container div.right {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-content: center;
+  }
+  section.searchMap div.container div.right img {
+    width: 100%;
+    overflow: hidden;
+  }
+}
+@media (max-width: 420px) {
+  section.searchMap {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    flex-direction: Column;
+    align-items: center;
+    justify-content: space-between;
+    justify-content: start;
+  }
+  section.searchMap div.container {
+    border: 1px solid rgba(0, 0, 0, 0.115);
+    height: 100%;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    align-items: start;
+    flex-wrap: wrap;
+  }
+  section.searchMap div.container div.left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50%;
+    width: 100%;
+  }
+  section.searchMap div.container div.left div.frame {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 90%;
+    height: 90%;
+  }
+  section.searchMap div.container div.left div.frame div.text {
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    align-items: start;
+  }
+  section.searchMap div.container div.left div.frame div.text h2 {
+    font-size: 1.7em;
+    font-weight: 700;
+    color: black;
+  }
+  section.searchMap div.container div.left div.frame div.text p {
+    font-size: 1em;
+    color: grey;
+  }
+  section.searchMap div.container div.left div.frame div.button {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-items: start;
+    justify-content: left;
+  }
+  section.searchMap div.container div.left div.frame div.button button {
+    background-color: red;
+    width: 130px;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    line-height: 2em;
+  }
+  section.searchMap div.container div.right {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-content: center;
+  }
+  section.searchMap div.container div.right img {
+    overflow: hidden;
+  }
+}
+section.project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 120vh;
+}
+section.project div.container {
+  width: 80%;
+  height: 80%;
+  display: flex;
+  flex-direction: Column;
+  align-items: center;
+  justify-content: space-between;
+}
+section.project div.container div.top {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+section.project div.container div.top h2 {
+  font-size: 1.5em;
+  font-weight: 600;
+}
+section.project div.container div.top button {
+  background-color: white;
+  width: 6em;
+}
+section.project div.container div.middle {
+  border: 1px solid rgba(0, 0, 0, 0.115);
+  height: 70%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  align-items: start;
+}
+section.project div.container div.middle div.left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+section.project div.container div.middle div.left div.frame {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 90%;
+  height: 90%;
+}
+section.project div.container div.middle div.left div.frame div.text {
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  align-items: start;
+}
+section.project div.container div.middle div.left div.frame div.text h2 {
+  font-size: 1.7em;
+  font-weight: 700;
+  color: black;
+}
+section.project div.container div.middle div.left div.frame div.text p {
+  font-size: 1em;
+  color: grey;
+}
+section.project div.container div.middle div.left div.button {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-items: start;
+  justify-content: left;
+}
+section.project div.container div.middle div.left div.button button {
+  background-color: red;
+  width: 130px;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  line-height: 2em;
+}
+section.project div.container div.middle div.right {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  justify-content: start;
+}
+section.project div.container div.middle div.right img {
+  width: 100%;
+}
+section.project div.container div.bottom {
+  height: 70%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+section.project div.container div.bottom div.leftContainer {
+  border: 1px solid rgba(0, 0, 0, 0.115);
+  height: 90%;
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  align-items: start;
+}
+section.project div.container div.bottom div.leftContainer div.left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+section.project div.container div.bottom div.leftContainer div.left div.frame {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 90%;
+  height: 90%;
+}
+section.project div.container div.bottom div.leftContainer div.left div.frame div.text {
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  align-items: start;
+}
+section.project div.container div.bottom div.leftContainer div.left div.frame div.text h2 {
+  font-size: 1.7em;
+  font-weight: 700;
+  color: black;
+}
+section.project div.container div.bottom div.leftContainer div.left div.frame div.text p {
+  font-size: 1em;
+  color: grey;
+}
+section.project div.container div.bottom div.leftContainer div.left div.button {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-items: start;
+  justify-content: left;
+}
+section.project div.container div.bottom div.leftContainer div.left div.button button {
+  background-color: red;
+  width: 130px;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  line-height: 2em;
+}
+section.project div.container div.bottom div.leftContainer div.right {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  justify-content: start;
+}
+section.project div.container div.bottom div.leftContainer div.right img {
+  height: 100%;
+}
+section.project div.container div.bottom div.rightContainer {
+  border: 1px solid rgba(0, 0, 0, 0.115);
+  height: 90%;
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  align-items: start;
+}
+section.project div.container div.bottom div.rightContainer div.left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+section.project div.container div.bottom div.rightContainer div.left div.frame {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 90%;
+  height: 90%;
+}
+section.project div.container div.bottom div.rightContainer div.left div.frame div.text {
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  align-items: start;
+}
+section.project div.container div.bottom div.rightContainer div.left div.frame div.text h2 {
+  font-size: 1.7em;
+  font-weight: 700;
+  color: black;
+}
+section.project div.container div.bottom div.rightContainer div.left div.frame div.text p {
+  font-size: 1em;
+  color: grey;
+}
+section.project div.container div.bottom div.rightContainer div.left div.button {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-items: start;
+  justify-content: left;
+}
+section.project div.container div.bottom div.rightContainer div.left div.button button {
+  background-color: red;
+  width: 130px;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  line-height: 2em;
+}
+section.project div.container div.bottom div.rightContainer div.right {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  justify-content: start;
+}
+section.project div.container div.bottom div.rightContainer div.right img {
+  height: 100%;
+}
+
+@media (max-width: 960px) {
+  section.project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-content: start;
+    width: 100%;
+    height: 150vh;
+  }
+  section.project div.container {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: Column;
+    align-items: center;
+    justify-content: space-between;
+    justify-content: start;
+  }
+  section.project div.container div.top {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  section.project div.container div.top h2 {
+    font-size: 1.5em;
+    font-weight: 600;
+  }
+  section.project div.container div.top button {
+    background-color: white;
+    width: 6em;
+  }
+  section.project div.container div.middle {
+    border: 1px solid rgba(0, 0, 0, 0.115);
+    height: 30%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    align-items: start;
+  }
+  section.project div.container div.middle div.left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+  section.project div.container div.middle div.left div.frame {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 90%;
+    height: 90%;
+  }
+  section.project div.container div.middle div.left div.frame div.text {
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    align-items: start;
+  }
+  section.project div.container div.middle div.left div.frame div.text h2 {
+    font-size: 1.7em;
+    font-weight: 700;
+    color: black;
+  }
+  section.project div.container div.middle div.left div.frame div.text p {
+    font-size: 1em;
+    color: grey;
+  }
+  section.project div.container div.middle div.left div.button {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-items: start;
+    justify-content: left;
+  }
+  section.project div.container div.middle div.left div.button button {
+    background-color: red;
+    width: 130px;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    line-height: 2em;
+  }
+  section.project div.container div.middle div.right {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-content: start;
+  }
+  section.project div.container div.middle div.right img {
+    width: 100%;
+  }
+  section.project div.container div.bottom {
+    height: 60%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  section.project div.container div.bottom div.leftContainer {
+    border: 1px solid rgba(0, 0, 0, 0.115);
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    align-items: start;
+  }
+  section.project div.container div.bottom div.leftContainer div.left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+  section.project div.container div.bottom div.leftContainer div.left div.frame {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 90%;
+    height: 90%;
+  }
+  section.project div.container div.bottom div.leftContainer div.left div.frame div.text {
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    align-items: start;
+  }
+  section.project div.container div.bottom div.leftContainer div.left div.frame div.text h2 {
+    font-size: 1.7em;
+    font-weight: 700;
+    color: black;
+  }
+  section.project div.container div.bottom div.leftContainer div.left div.frame div.text p {
+    font-size: 1em;
+    color: grey;
+  }
+  section.project div.container div.bottom div.leftContainer div.left div.button {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-items: start;
+    justify-content: left;
+  }
+  section.project div.container div.bottom div.leftContainer div.left div.button button {
+    background-color: red;
+    width: 130px;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    line-height: 2em;
+  }
+  section.project div.container div.bottom div.leftContainer div.right {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-content: start;
+  }
+  section.project div.container div.bottom div.leftContainer div.right img {
+    width: 100%;
+  }
+  section.project div.container div.bottom div.rightContainer {
+    border: 1px solid rgba(0, 0, 0, 0.115);
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    align-items: start;
+  }
+  section.project div.container div.bottom div.rightContainer div.left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+  section.project div.container div.bottom div.rightContainer div.left div.frame {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 90%;
+    height: 90%;
+  }
+  section.project div.container div.bottom div.rightContainer div.left div.frame div.text {
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    align-items: start;
+  }
+  section.project div.container div.bottom div.rightContainer div.left div.frame div.text h2 {
+    font-size: 1.7em;
+    font-weight: 700;
+    color: black;
+  }
+  section.project div.container div.bottom div.rightContainer div.left div.frame div.text p {
+    font-size: 1em;
+    color: grey;
+  }
+  section.project div.container div.bottom div.rightContainer div.left div.button {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-items: start;
+    justify-content: left;
+  }
+  section.project div.container div.bottom div.rightContainer div.left div.button button {
+    background-color: red;
+    width: 130px;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    line-height: 2em;
+  }
+  section.project div.container div.bottom div.rightContainer div.right {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-content: start;
+  }
+  section.project div.container div.bottom div.rightContainer div.right img {
+    width: 100%;
+  }
+}
+@media (max-width: 420px) {
+  section.project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-content: start;
+    width: 100%;
+    height: 300vh;
+  }
+  section.project div.container {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: Column;
+    align-items: center;
+    justify-content: space-between;
+    justify-content: start;
+  }
+  section.project div.container div.top {
+    width: 100%;
+    height: 5%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  section.project div.container div.top h2 {
+    font-size: 1.5em;
+    font-weight: 600;
+  }
+  section.project div.container div.top button {
+    background-color: white;
+    width: 6em;
+  }
+  section.project div.container div.middle {
+    border: 1px solid rgba(0, 0, 0, 0.115);
+    height: 30%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: start;
+  }
+  section.project div.container div.middle div.left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50%;
+    width: 100%;
+  }
+  section.project div.container div.middle div.left div.frame {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 90%;
+    height: 90%;
+  }
+  section.project div.container div.middle div.left div.frame div.text {
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    align-items: start;
+  }
+  section.project div.container div.middle div.left div.frame div.text h2 {
+    font-size: 1.7em;
+    font-weight: 700;
+    color: black;
+  }
+  section.project div.container div.middle div.left div.frame div.text p {
+    font-size: 1em;
+    color: grey;
+  }
+  section.project div.container div.middle div.left div.button {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-items: start;
+    justify-content: left;
+  }
+  section.project div.container div.middle div.left div.button button {
+    background-color: red;
+    width: 130px;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    line-height: 2em;
+  }
+  section.project div.container div.middle div.right {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-content: start;
+  }
+  section.project div.container div.middle div.right img {
+    width: 100%;
+  }
+  section.project div.container div.bottom {
+    height: 60%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  section.project div.container div.bottom div.leftContainer {
+    border: 1px solid rgba(0, 0, 0, 0.115);
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: start;
+  }
+  section.project div.container div.bottom div.leftContainer div.left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50%;
+    width: 100%;
+  }
+  section.project div.container div.bottom div.leftContainer div.left div.frame {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 90%;
+    height: 90%;
+  }
+  section.project div.container div.bottom div.leftContainer div.left div.frame div.text {
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    align-items: start;
+  }
+  section.project div.container div.bottom div.leftContainer div.left div.frame div.text h2 {
+    font-size: 1.7em;
+    font-weight: 700;
+    color: black;
+  }
+  section.project div.container div.bottom div.leftContainer div.left div.frame div.text p {
+    font-size: 1em;
+    color: grey;
+  }
+  section.project div.container div.bottom div.leftContainer div.left div.button {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-items: start;
+    justify-content: left;
+  }
+  section.project div.container div.bottom div.leftContainer div.left div.button button {
+    background-color: red;
+    width: 130px;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    line-height: 2em;
+  }
+  section.project div.container div.bottom div.leftContainer div.right {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-content: center;
+  }
+  section.project div.container div.bottom div.leftContainer div.right img {
+    height: 100%;
+  }
+  section.project div.container div.bottom div.rightContainer {
+    border: 1px solid rgba(0, 0, 0, 0.115);
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    align-items: start;
+    flex-wrap: wrap;
+  }
+  section.project div.container div.bottom div.rightContainer div.left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50%;
+    width: 100%;
+  }
+  section.project div.container div.bottom div.rightContainer div.left div.frame {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 90%;
+    height: 90%;
+  }
+  section.project div.container div.bottom div.rightContainer div.left div.frame div.text {
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    align-items: start;
+  }
+  section.project div.container div.bottom div.rightContainer div.left div.frame div.text h2 {
+    font-size: 1.7em;
+    font-weight: 700;
+    color: black;
+  }
+  section.project div.container div.bottom div.rightContainer div.left div.frame div.text p {
+    font-size: 1em;
+    color: grey;
+  }
+  section.project div.container div.bottom div.rightContainer div.left div.button {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-items: start;
+    justify-content: left;
+  }
+  section.project div.container div.bottom div.rightContainer div.left div.button button {
+    background-color: red;
+    width: 130px;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    line-height: 2em;
+  }
+  section.project div.container div.bottom div.rightContainer div.right {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-content: start;
+  }
+  section.project div.container div.bottom div.rightContainer div.right img {
+    height: 100%;
+  }
+}
+footer {
+  width: 100%;
+  background-color: rgb(72, 70, 70);
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+footer div.container {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+footer div.container div.left {
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+footer div.container div.left ul {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  align-items: start;
+}
+footer div.container div.left ul li a {
+  color: rgb(111, 111, 111);
+}
+footer div.container div.left ul li a h3 {
+  color: white;
+  font-weight: 500;
+}
+footer div.container div.middle {
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+footer div.container div.middle ul {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  align-items: start;
+}
+footer div.container div.middle ul li a {
+  color: rgb(111, 111, 111);
+}
+footer div.container div.middle ul li a h3 {
+  color: white;
+  font-weight: 500;
+}
+footer div.container div.right {
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+footer div.container div.right ul {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  align-items: start;
+}
+footer div.container div.right ul li a {
+  color: rgb(111, 111, 111);
+}
+footer div.container div.right ul li a h3 {
+  color: white;
+  font-weight: 500;
+}
+
+@media (max-width: 500px) {
+  footer {
+    width: 100%;
+    background-color: rgb(72, 70, 70);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  footer div.container {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  footer div.container div.left {
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  footer div.container div.left ul {
+    height: 70%;
+    display: flex;
+    flex-direction: Column;
+    align-items: center;
+    justify-content: space-between;
+    align-items: start;
+  }
+  footer div.container div.left ul li a {
+    color: rgb(111, 111, 111);
+  }
+  footer div.container div.left ul li a h3 {
+    color: white;
+    font-weight: 500;
+  }
+  footer div.container div.middle {
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  footer div.container div.middle ul {
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    align-items: start;
+  }
+  footer div.container div.middle ul li a {
+    color: rgb(111, 111, 111);
+  }
+  footer div.container div.middle ul li a h3 {
+    color: white;
+    font-weight: 500;
+  }
+  footer div.container div.right {
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  footer div.container div.right ul {
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    align-items: start;
+  }
+  footer div.container div.right ul li a {
+    color: rgb(111, 111, 111);
+  }
+  footer div.container div.right ul li a h3 {
+    color: white;
+    font-weight: 500;
+  }
+}
+body button:hover {
+  cursor: pointer;
+}/*# sourceMappingURL=style.css.map */
